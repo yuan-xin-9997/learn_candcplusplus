@@ -12,8 +12,8 @@
 ## 2.1 Preprocessing
 
 ```shell
-g++ -E helloworld.c
-g++ -E helloworld.c -o helloworld.i
+g++ -E helloworld.cpp
+g++ -E helloworld.cpp -o helloworld.i
 ```
 - -E 选项告诉编译器只进行预处理操作
 - -o 选项把预处理的结果输出到指定文件      
@@ -23,8 +23,8 @@ g++ -E helloworld.c -o helloworld.i
 &emsp;
 ## 2.2 Generating Assembly Language
 ```shell
-g++ -S helloworld.c
-g++ -S helloworld.c -o helloworld.s
+g++ -S helloworld.cpp
+g++ -S helloworld.cpp -o helloworld.s
 ```
 - -S 选项告诉编译器，进行预处理和编译成汇编语言操作
 
@@ -34,10 +34,10 @@ g++ -S helloworld.c -o helloworld.s
 &emsp;
 ## 2.3 Source File to Object File
 ```shell
-g++ -c helloworld.c
-g++ -c helloworld.c -o harumph.o
+g++ -c helloworld.cpp
+g++ -c helloworld.cpp -o harumph.o
 # 编译多个 .c 文件
-g++ -c helloworld.c helloworld1.c helloworld2.c
+g++ -c helloworld.cpp helloworld1.cpp helloworld2.cpp
 ```
 
 
@@ -47,8 +47,8 @@ g++ -c helloworld.c helloworld1.c helloworld2.c
 
 
 ```shell
-g++ helloworld.c
-g++ helloworld.c -o howdy
+g++ helloworld.cpp
+g++ helloworld.cpp -o howdy
 ```
 
 执行程序

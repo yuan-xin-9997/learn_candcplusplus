@@ -12,6 +12,6 @@ int main()
     c = add(a, b);
     printf("a+b = %d\n", c);
     c = minus(a, b);
-    printf("a_b = %d\n", c);
+    printf("a-b = %d\n", c);
     return 0;
 }
