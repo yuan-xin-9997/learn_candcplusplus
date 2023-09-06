@@ -10,10 +10,10 @@
                 "${file}",
                 //"${fileDirname}\\swap.cpp",
                 //"${fileDirname}\\*.cpp",
-                //"-g ${workspaceFolder}/src/09test/09test.cpp",
-                //"-g ${workspaceFolder}/src/09test/swap.cpp",
+                //"-g ${workspaceFolder}/src/makefile_example4_multi_file_with_headfile/makefile_example4_multi_file_with_headfile.cpp",
+                //"-g ${workspaceFolder}/src/makefile_example4_multi_file_with_headfile/swap.cpp",
                 //"${file}",
-                //"${workspaceFolder}/src/09test.cpp",
+                //"${workspaceFolder}/src/makefile_example4_multi_file_with_headfile.cpp",
                 //"${workspaceFolder}/src/swap.cpp",
                 "-o",
                 "${fileDirname}\\${fileBasenameNoExtension}.exe"

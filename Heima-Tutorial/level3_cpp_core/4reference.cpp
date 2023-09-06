@@ -7,9 +7,11 @@ using namespace std;
 // 引用的基本使用、注意事项
 void test01(){
     // 引用作用：给变量起别名
+
     // 引用基本语法
     // 数据类型 &别名 = 原名
     int a = 10;
+
     // 创建引用，注意和赋值、指针 的区别
     int & b = a;
 //    int b = a;
@@ -66,21 +68,22 @@ void test02(){
     int a = 10;
 	int b = 20;
 
-	mySwap01(a, b);
+	mySwap01(a, b);//值传递
 	cout << "a:" << a << " b:" << b << endl;
 
     a = 10;
     b = 20;
 
-	mySwap02(&a, &b);
+	mySwap02(&a, &b);// 地址传递
 	cout << "a:" << a << " b:" << b << endl;
 
     a = 10;
     b = 20;
 
-	mySwap03(a, b);
+	mySwap03(a, b);// 引用传递
 	cout << "a:" << a << " b:" << b << endl;
 }
+
 
 //返回局部变量引用
 int& test31() {
@@ -151,8 +154,8 @@ int main(){
     test03();
 
     // 2.5 引用的本质（指针常量，引用的本质在c++内部实现是一个指针常量，指针常量：const修饰的是常量，指针指向不可以改，指针指向的值可以更改）
-    //    自动转换为 int* const ref = &a; 指针常量是指针指向不可改，也说明为什么引用不可更改
-    //	int& ref = a;
+    //  int& ref = a;  自动转换为 int* const ref = &a; 指针常量是指针指向不可改，也说明为什么引用不可更改
+    //
 
     // 2.6 常量引用
     test05();
