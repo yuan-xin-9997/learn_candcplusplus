@@ -3,46 +3,51 @@
 //
 #include "iostream"
 using namespace std;
-//å…¨å±€å˜é‡
+//È«¾Ö±äÁ¿
 int g_a = 10;
 int g_b = 10;
 
-//å…¨å±€å¸¸é‡
+//È«¾Ö³£Á¿
 const int c_g_a = 10;
 const int c_g_b = 10;
 
+// ¾²Ì¬È«¾Ö±äÁ¿
+static int s_g_a = 10;
+static int s_g_b = 10;
+
 int main() {
 
-	//å±€éƒ¨å˜é‡
+	//¾Ö²¿±äÁ¿
 	int a = 10;
 	int b = 10;
 
-	//æ‰“å°åœ°å€
-	cout << "å±€éƒ¨å˜é‡aåœ°å€ä¸ºï¼š " << &a << endl;
-	cout << "å±€éƒ¨å˜é‡båœ°å€ä¸ºï¼š " << &b << endl;
+	//´òÓ¡µØÖ·
+	cout << "¾Ö²¿±äÁ¿aµØÖ·Îª£º " << &a << endl;
+	cout << "¾Ö²¿±äÁ¿bµØÖ·Îª£º " << &b << endl;
 
-	cout << "å…¨å±€å˜é‡g_aåœ°å€ä¸ºï¼š " <<  &g_a << endl;
-	cout << "å…¨å±€å˜é‡g_båœ°å€ä¸ºï¼š " <<  &g_b << endl;
+	cout << "È«¾Ö±äÁ¿g_aµØÖ·Îª£º " <<  &g_a << endl;
+	cout << "È«¾Ö±äÁ¿g_bµØÖ·Îª£º " <<  &g_b << endl;
 
-	//é™æ€å˜é‡
+	//¾²Ì¬±äÁ¿
 	static int s_a = 10;
 	static int s_b = 10;
 
-	cout << "é™æ€å˜é‡s_aåœ°å€ä¸ºï¼š " << &s_a << endl;
-	cout << "é™æ€å˜é‡s_båœ°å€ä¸ºï¼š " << &s_b << endl;
+	cout << "¾²Ì¬±äÁ¿s_aµØÖ·Îª£º " << &s_a << endl;
+	cout << "¾²Ì¬±äÁ¿s_bµØÖ·Îª£º " << &s_b << endl;
 
-	cout << "å­—ç¬¦ä¸²å¸¸é‡åœ°å€ä¸ºï¼š " << &"hello world" << endl;
-	cout << "å­—ç¬¦ä¸²å¸¸é‡åœ°å€ä¸ºï¼š " << &"hello world1" << endl;
+	cout << "×Ö·û´®³£Á¿µØÖ·Îª£º " << &"hello world" << endl;
+	cout << "×Ö·û´®³£Á¿µØÖ·Îª£º " << &"hello world1" << endl;
 
-	cout << "å…¨å±€å¸¸é‡c_g_aåœ°å€ä¸ºï¼š " << &c_g_a << endl;
-	cout << "å…¨å±€å¸¸é‡c_g_båœ°å€ä¸ºï¼š " << &c_g_b << endl;
+	cout << "È«¾Ö³£Á¿c_g_aµØÖ·Îª£º " << &c_g_a << endl;
+	cout << "È«¾Ö³£Á¿c_g_bµØÖ·Îª£º " << &c_g_b << endl;
 
 	const int c_l_a = 10;
 	const int c_l_b = 10;
-	cout << "å±€éƒ¨å¸¸é‡c_l_aåœ°å€ä¸ºï¼š " << &c_l_a << endl;
-	cout << "å±€éƒ¨å¸¸é‡c_l_båœ°å€ä¸ºï¼š " << &c_l_b << endl;
+	cout << "¾Ö²¿³£Á¿c_l_aµØÖ·Îª£º " << &c_l_a << endl;
+	cout << "¾Ö²¿³£Á¿c_l_bµØÖ·Îª£º " << &c_l_b << endl;
 
-	system("pause");
+    cout << "¾²Ì¬È«¾Ö±äÁ¿s_g_aµØÖ·Îª£º " << &s_g_a << endl;
+	cout << "¾²Ì¬È«¾Ö±äÁ¿s_g_bµØÖ·Îª£º " << &s_g_b << endl;
 
 	return 0;
 }
